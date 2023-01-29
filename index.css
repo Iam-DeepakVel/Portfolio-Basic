@@ -74,6 +74,7 @@ li {
   box-shadow: rgb(240, 81, 51) 0px 5px 15px;
 }
 
+/* Section Header Style */
 .section-head-white {
   font-family: "Patrick Hand", cursive;
   font-size: 38px;
@@ -208,6 +209,31 @@ li {
   border-radius: 15px;
 }
 
+.download-button {
+  width: 10rem;
+  padding: 2px;
+  margin-top: 1.5rem;
+  height: 3rem;
+  border: none;
+  background-color: #3aafa9;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "unbounded", cursive;
+  color: white;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.download-button span{
+  transition: all ease-in-out 300ms;
+}
+
+.download-button span:hover{
+  transform: rotate(90deg);
+}
+
 /* About me */
 
 .aboutMe-container {
@@ -308,7 +334,7 @@ li {
 .experienceCard-container {
   margin: 0 auto;
   height: 100%;
-  width: 100%;
+  width: 90%;
 }
 
 .experience-card {
@@ -316,11 +342,11 @@ li {
   flex-direction: column;
   justify-items: center;
   width: 100%;
-  padding: 1.2rem 2rem;
+  padding: 2.5rem;
   border-radius: 0.7rem;
   box-shadow: rgba(18, 123, 123, 0.747) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .companyName {
@@ -334,6 +360,7 @@ li {
   font-family: "Unbounded", cursive;
   font-size: 28px;
   font-weight: 900;
+  letter-spacing: 2px;
 }
 
 .companyName p {
@@ -360,7 +387,7 @@ li {
   display: flex;
   align-items: center;
   font-family: "Poppins", sans-serif;
-  margin-bottom: 6px;
+  margin-bottom: 12px;
   font-size: medium;
   font-weight: 600;
   gap: 6px;
@@ -435,4 +462,50 @@ li {
 .portfolio-buttons a:hover {
   transform: scale(0.9);
   border-radius: 12px;
+}
+
+/* Social Bar */
+.socialIcons-container {
+  position: fixed;
+  left: 0;
+}
+
+.singleIcon-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 130px;
+  height: 56px;
+  background-color: #17252a;
+  margin-left: -100px;
+  padding: 0 16px;
+  transition: all ease-in-out 300ms;
+}
+
+.rounded-tr-sm {
+  border-top-right-radius: 6px;
+}
+
+.rouned-br-sm {
+  border-bottom-right-radius: 6px;
+}
+
+.singleIcon-container:hover {
+  margin-left: -10px;
+  border-radius: 6px;
+}
+
+.icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #79f6ef;
+}
+
+.icon span {
+  font-family: "poppins";
+  font-weight: 600;
+  font-size: 18px;
+  color: #feffff;
 }
